@@ -1,5 +1,25 @@
 import { getMcpServer } from './mcp-server.js'
 
+// Smithery-compatible entry point
+export default function createServer({ config }: { config: { todoistApiKey: string } }) {
+    const server = getMcpServer({ 
+        todoistApiKey: config.todoistApiKey
+    })
+    
+    return server.server
+}
+
+export const configSchema = {
+    type: "object",
+    required: ["todoistApiKey"],
+    properties: {
+        todoistApiKey: {
+            type: "string",
+            description: "The API key for the Todoist server."
+        }
+    }
+}
+
 // Task management tools
 import { addTasks } from './tools/add-tasks.js'
 import { completeTasks } from './tools/complete-tasks.js'

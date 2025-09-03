@@ -3,6 +3,7 @@
     "version": "4.2.0",
     "type": "module",
     "main": "./dist/index.js",
+    "module": "src/index.ts",
     "types": "./dist/index.d.ts",
     "bin": {
         "todoist-ai": "dist/main.js"
