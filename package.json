@@ -1,6 +1,6 @@
 {
     "name": "@doist/todoist-ai",
-    "version": "4.2.0",
+    "version": "5.0.0",
     "type": "module",
     "main": "./dist/index.js",
     "module": "src/index.ts",

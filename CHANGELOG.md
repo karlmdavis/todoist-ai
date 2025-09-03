@@ -1,5 +1,49 @@
 # Changelog
 
+## [5.0.0](https://github.com/karlmdavis/todoist-ai/compare/v4.2.0...v5.0.0) (2025-09-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* restructure management tools into specialized add/update tools ([#59](https://github.com/karlmdavis/todoist-ai/issues/59))
+* verb-first tool names, unify find-by-container into find-tasks ([#53](https://github.com/karlmdavis/todoist-ai/issues/53))
+* Remove single update task and replace with multiple ([#47](https://github.com/karlmdavis/todoist-ai/issues/47))
+* Consolidate MCP tools to reduce tool count ([#14](https://github.com/karlmdavis/todoist-ai/issues/14))
+
+### Features
+
+* add comment tools ([#58](https://github.com/karlmdavis/todoist-ai/issues/58)) ([7d6ffca](https://github.com/karlmdavis/todoist-ai/commit/7d6ffcacd326ef755aba691436d44d6b534f6b4b))
+* Add npx support for MCP server usage ([#33](https://github.com/karlmdavis/todoist-ai/issues/33)) ([5ed0c5f](https://github.com/karlmdavis/todoist-ai/commit/5ed0c5f40615ab4afb61d0fcd9796c97e666b1f9))
+* Add Smithery CLI dev dependencies and documentation ([aea276c](https://github.com/karlmdavis/todoist-ai/commit/aea276c5efc733f43242d79505c3fe6578ad7bee))
+* Add Smithery deployment support ([1bcf488](https://github.com/karlmdavis/todoist-ai/commit/1bcf488249b73986b2bdd2550426239b163d3572))
+* Add support for filtering by label ([#71](https://github.com/karlmdavis/todoist-ai/issues/71)) ([b608d32](https://github.com/karlmdavis/todoist-ai/commit/b608d32f7636a175dc62ca388892e9aef0834712))
+* add support for task duration when adding or updating tasks ([#28](https://github.com/karlmdavis/todoist-ai/issues/28)) ([a0c6702](https://github.com/karlmdavis/todoist-ai/commit/a0c6702dd446173c86675ecadd975506ce594c42))
+* add tasks-add-multiple and tasks-update-one tools ([f7432e7](https://github.com/karlmdavis/todoist-ai/commit/f7432e7f8c4121ed2bf71b424fe17d03e59aed23))
+* add tasks-complete-one and tasks-delete-one tools ([1ef6a99](https://github.com/karlmdavis/todoist-ai/commit/1ef6a99e2733226d85932b930a41dc9ff92d0ef9))
+* add todoist base url to dev setup, plus doc improvements ([#62](https://github.com/karlmdavis/todoist-ai/issues/62)) ([e0e5a78](https://github.com/karlmdavis/todoist-ai/commit/e0e5a78d1358b82d5f2661a41ffe193015296154))
+* Adds completed tasks tool ([#8](https://github.com/karlmdavis/todoist-ai/issues/8)) ([d0ffad1](https://github.com/karlmdavis/todoist-ai/commit/d0ffad10a331c16f14b4d738ed7ac368fd8e44b4))
+* allow configuring the base URL for the Todoist API ([332c11a](https://github.com/karlmdavis/todoist-ai/commit/332c11aec34ace9890fda36ef9356a7c417b22d1))
+* allow configuring the base URL for the Todoist API ([c56b3a3](https://github.com/karlmdavis/todoist-ai/commit/c56b3a36207fb211188737f05f472ebcee6e7fc5))
+* Consolidate MCP tools to reduce tool count ([#14](https://github.com/karlmdavis/todoist-ai/issues/14)) ([f0ccdf8](https://github.com/karlmdavis/todoist-ai/commit/f0ccdf8fd17f046fdb8d0938dea94163fd916a7c))
+* export comment tools ([#63](https://github.com/karlmdavis/todoist-ai/issues/63)) ([cec2999](https://github.com/karlmdavis/todoist-ai/commit/cec2999b8ca1f660f26b37cffb3803e863f60be0))
+* Improve tool output UX with LLM-readable responses ([#49](https://github.com/karlmdavis/todoist-ai/issues/49)) ([7c25696](https://github.com/karlmdavis/todoist-ai/commit/7c25696926bbaee158482cbc75595e80959e1c12))
+* parallelize add-tasks with per-task context ([#60](https://github.com/karlmdavis/todoist-ai/issues/60)) ([816d099](https://github.com/karlmdavis/todoist-ai/commit/816d099551974bad3e0663c1d77334b692aaa76a))
+* Remove single update task and replace with multiple ([#47](https://github.com/karlmdavis/todoist-ai/issues/47)) ([8a9b7cf](https://github.com/karlmdavis/todoist-ai/commit/8a9b7cf119a405a2849ab95c437a344961790686))
+* restructure management tools into specialized add/update tools ([#59](https://github.com/karlmdavis/todoist-ai/issues/59)) ([0c4dcf7](https://github.com/karlmdavis/todoist-ai/commit/0c4dcf7c4e420eadea15bf825599f4c3cd72cbfc))
+* verb-first tool names, unify find-by-container into find-tasks ([#53](https://github.com/karlmdavis/todoist-ai/issues/53)) ([dbada71](https://github.com/karlmdavis/todoist-ai/commit/dbada719d98df4bb91a52a0a7af8afb6ad6f3fae))
+
+
+### Bug Fixes
+
+* add issues permission for release-please workflow ([0974fa4](https://github.com/karlmdavis/todoist-ai/commit/0974fa45aa8578eafd2e9e1355a997ee09dce391))
+* convert project from CommonJS to ES modules to resolve MCP initialization ([#24](https://github.com/karlmdavis/todoist-ai/issues/24)) ([f817e04](https://github.com/karlmdavis/todoist-ai/commit/f817e045a711f90b4f74464a480dd1aa8f7e1027))
+* correct bin field format in package.json for npx support ([#37](https://github.com/karlmdavis/todoist-ai/issues/37)) ([a50fa75](https://github.com/karlmdavis/todoist-ai/commit/a50fa75d737bc6f4503442830565c3d4a942c9af))
+* correct bin path in package.json for npx support ([#39](https://github.com/karlmdavis/todoist-ai/issues/39)) ([816021d](https://github.com/karlmdavis/todoist-ai/commit/816021dc3572dd476818981388fac634794d7e21))
+* format package.json for release ([94c3205](https://github.com/karlmdavis/todoist-ai/commit/94c3205b18362fb708fc2625b7df1c05b9844453))
+* format package.json for release ([899ff1e](https://github.com/karlmdavis/todoist-ai/commit/899ff1e9af213e99385d37e498d90af118235aa4))
+* resolve task move operations using correct Todoist API methods ([#22](https://github.com/karlmdavis/todoist-ai/issues/22)) ([3b8f509](https://github.com/karlmdavis/todoist-ai/commit/3b8f50943f517ae76b754923f7a8c5563880e9ba))
+* update release-please action to googleapis/release-please-action@v4 ([7fbb5fd](https://github.com/karlmdavis/todoist-ai/commit/7fbb5fdd3f435e68a9b2ba054247d29e82fcc465))
+
 ## [4.2.0](https://github.com/Doist/todoist-ai/compare/v4.1.0...v4.2.0) (2025-08-29)
 
 
